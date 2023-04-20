@@ -10,6 +10,6 @@ namespace CarService.Data
             
         }
 
-        public DbSet<CarInsurance> CarInsurances { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
