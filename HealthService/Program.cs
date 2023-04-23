@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase(databaseName: "myInMemoryDb"));
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //CONFIGURING DEPENDENCY INJECTION
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 
