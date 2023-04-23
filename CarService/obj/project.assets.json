@@ -4835,24 +4835,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/ermal/.nuget/packages/": {}
+    "C:\\Users\\hp zbook\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard/CarService/CarService.csproj",
+      "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\CarService\\CarService.csproj",
       "projectName": "CarService",
-      "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard/CarService/CarService.csproj",
-      "packagesPath": "/Users/ermal/.nuget/packages/",
-      "outputPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard/CarService/obj/",
+      "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\CarService\\CarService.csproj",
+      "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\CarService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ermal/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4929,7 +4931,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
