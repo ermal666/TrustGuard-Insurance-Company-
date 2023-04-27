@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NHn1uTEc5QX7BKAMZrmlqwBMEpEaImovOHVSpaAnl5o=",
+  "Source": "HealthService",
+  "BasePath": "_content/HealthService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
