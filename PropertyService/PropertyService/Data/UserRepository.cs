@@ -35,7 +35,7 @@ namespace PropertyService.Data
             {
                 throw new ArgumentNullException(nameof(user));
             }
-            _dbContext.Users.Add(user);
+            _dbContext.Set<User>().Add(user);
             return true;
         }
     }

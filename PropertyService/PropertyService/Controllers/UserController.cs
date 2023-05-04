@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PropertyService.Models;
+using PropertyService.Services;
 
 namespace PropertyService.Controllers
 {
@@ -6,9 +8,9 @@ namespace PropertyService.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public UserController(UserService userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
@@ -22,6 +24,23 @@ namespace PropertyService.Controllers
                 return NotFound();
             }
             return Ok(users);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetUser(int id)
+        {
+            var user = _userService.GetUser(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+
+        [HttpPost]
+        public void CreateUser(User user)
+        {
+            _userService.CreateUser(user);
         }
 
     }

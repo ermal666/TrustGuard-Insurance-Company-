@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PropertyService.Models;
 
+
 namespace PropertyService.Data
 {
     public class AppDbContext : DbContext, IAppDbContext
@@ -12,9 +13,11 @@ namespace PropertyService.Data
 
         public DbSet<User> Users { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(entity => { entity.HasIndex(e => e.Id).IsUnique(); });
+
         }
     }
 }
