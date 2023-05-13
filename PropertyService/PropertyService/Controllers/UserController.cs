@@ -4,7 +4,7 @@ using PropertyService.Services;
 
 namespace PropertyService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : Controller
     {
@@ -16,9 +16,9 @@ namespace PropertyService.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllUsers()
+        public async Task<IActionResult> GetAllUsers(int pageIndex = 1, int pageSize = 20)
         {
-            var users = _userService.GetUsers();
+            var users = await _userService.GetUsersPaged(pageIndex, pageSize);
             if(users is null)
             {
                 return NotFound();
@@ -27,9 +27,9 @@ namespace PropertyService.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetUser(int id)
+        public async Task<IActionResult> GetUser(int id)
         {
-            var user = _userService.GetUser(id);
+            var user = await _userService.GetUser(id);
             if (user == null)
             {
                 return NotFound();
@@ -38,9 +38,14 @@ namespace PropertyService.Controllers
         }
 
         [HttpPost]
-        public void CreateUser(User user)
+        public async Task<IActionResult> CreateUser(User user)
         {
-            _userService.CreateUser(user);
+            var isCreated = await _userService.CreateUser(user);
+            if (isCreated)
+            {
+                return Ok(user);
+            }
+            return BadRequest();
         }
 
     }

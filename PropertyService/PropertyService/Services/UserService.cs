@@ -1,5 +1,7 @@
 ﻿using PropertyService.Data;
 using PropertyService.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace PropertyService.Services
 {
@@ -12,21 +14,35 @@ namespace PropertyService.Services
             _userRepository = userRepository;
         }
 
-        public List<User> GetUsers()
+        public async Task<List<User>> GetUsersPaged(int pageIndex, int pageSize)
         {
-            var users = _userRepository.GetAllUsers().ToList();
+            var users = await _userRepository.GetAllUsers()
+                                                    .OrderByDescending(x => x.Id)
+                                                    .Skip((pageIndex - 1) * pageSize)
+                                                    .Take(pageSize)
+                                                    .ToListAsync();
             return users;
         }
 
-        public User GetUser(int id)
+        public async Task<User> GetUser(int id)
         {
-            var user = _userRepository.GetUserById(id);
-            return user;
+            var user = await _userRepository.GetUserById(x => x.Id == id).FirstOrDefaultAsync();
+            return user ?? new User();
         }
 
-        public bool CreateUser(User user)
+        public async Task DeleteUser(int id)
         {
-            return _userRepository.CreateUser(user);
+            var user = await _userRepository.GetUserById(x => x.Id == id).FirstOrDefaultAsync();
+            _userRepository.Delete(user);
+            await _userRepository.SaveChangesAsync();
         }
+
+        public async Task<bool> CreateUser(User user)
+        {
+            await _userRepository.CreateUserAsync(user);
+            var isAdded = await _userRepository.SaveChangesAsync();
+            return isAdded;
+        }
+
     }
 }

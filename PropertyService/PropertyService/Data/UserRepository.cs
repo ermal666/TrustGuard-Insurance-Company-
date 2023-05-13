@@ -1,4 +1,5 @@
 ﻿using PropertyService.Models;
+using System.Linq.Expressions;
 
 namespace PropertyService.Data
 {
@@ -11,9 +12,10 @@ namespace PropertyService.Data
             _dbContext = dbContext;
         }
 
-        public bool SaveChanges()
+        public async Task<bool> SaveChangesAsync()
         {
-            return (_dbContext.SaveChanges() >= 0);
+            var complete = await _dbContext.SaveChangesAsync() > 0;
+            return complete;
         }
 
         public IQueryable<User> GetAllUsers()
@@ -21,22 +23,52 @@ namespace PropertyService.Data
             return _dbContext.Set<User>();
         }
 
-        public User GetUserById(int id)
+        public IQueryable<User> GetUserById(Expression<Func<User, bool>> expression)
         {
-            
-            var user = _dbContext.Users.FirstOrDefault(x => x.Id == id);
-            return user is null ? throw new NullReferenceException(nameof(user)) : user;
-        
+
+            return _dbContext.Set<User>().Where(expression);
+
         }
 
-        public bool CreateUser(User user)
+        public void CreateUser(User user)
         {
-            if (user == null)
-            {
-                throw new ArgumentNullException(nameof(user));
-            }
             _dbContext.Set<User>().Add(user);
-            return true;
+
+        }
+
+        public async Task CreateUserAsync(User user)
+        {
+            await _dbContext.Set<User>().AddAsync(user);
+
+        }
+
+
+        public void CreateRange(List<User> users)
+        {
+            _dbContext.Set<User>().AddRange(users);
+        }
+
+        public async Task CreateRangeAsync(List<User> users)
+        {
+            await _dbContext.Set<User>().AddRangeAsync(users);
+        }
+
+        public void Delete(User user)
+        {
+            _dbContext.Set<User>().Remove(user);
+        }
+        public void DeleteRange(List<User> users)
+        {
+            _dbContext.Set<User>().RemoveRange(users);
+        }
+
+        public void Update(User user)
+        {
+            _dbContext.Set<User>().Update(user);
+        }
+        public void UpdateRange(List<User> users)
+        {
+            _dbContext.Set<User>().UpdateRange(users);
         }
     }
 }
