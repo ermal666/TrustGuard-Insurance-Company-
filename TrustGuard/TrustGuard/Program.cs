@@ -16,6 +16,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 services.AddScoped<IUserRepository, UserRepository>();
 services.AddScoped<IUserService, UserService>();
+services.AddScoped<ICascoRepository, CascoRepository>();
 
 var app = builder.Build();
 
