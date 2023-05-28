@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrustGuard.Domain\TrustGuard.Domain.csproj" />
+    <ProjectReference Include="..\TrustGuard.Persistence\TrustGuard.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
