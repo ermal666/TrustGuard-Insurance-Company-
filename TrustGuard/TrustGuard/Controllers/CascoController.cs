@@ -4,9 +4,9 @@ using TrustGuard.Persistence.IRepositories;
 
 namespace TrustGuard.Application.Controllers;
 
-[Route("api/[controller]/[action]/")]
+[Route("api/[controller]/[action]")]
 [ApiController]
-public class CascoController : Controller
+public class CascoController : ControllerBase
 {
     private readonly ICascoRepository _cascoRepository;
     
@@ -16,14 +16,13 @@ public class CascoController : Controller
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<Casco>>> GetAll()
+    public async Task<ActionResult<List<CascoInsurance>>> GetAll()
     {
-        var result =  await _cascoRepository.GetAll();
-        return Ok(result);
+        return Ok(await _cascoRepository.GetAll());
     }
     
     [HttpGet("{id}")]
-    public async Task<ActionResult<Casco>> GetSingleCasco(int id)
+    public async Task<ActionResult<CascoInsurance>> GetSingleCasco(int id)
     {
         var result = await _cascoRepository.GetSingleCasco(id);
         if (result is null)
@@ -33,16 +32,15 @@ public class CascoController : Controller
     }
 
     [HttpPost]
-    public async Task<ActionResult<List<Casco>>> AddCasco(Casco casco)
+    public async Task<ActionResult<List<CascoInsurance>>> AddCasco(CascoInsurance cascoInsurance)
     {
-        var result = await _cascoRepository.AddCasco(casco);
-        return Ok(result);
+        return Ok(await _cascoRepository.AddCasco(cascoInsurance));
     }
     
-    [HttpPut]
-    public async Task<ActionResult<List<Casco>>> UpdateCasco(int id, Casco casco)
+    [HttpPut("{id}")]
+    public async Task<ActionResult<List<CascoInsurance>>> UpdateCasco(int id, CascoInsurance cascoInsurance)
     {
-        var result = await _cascoRepository.UpdateCasco(id, casco);
+        var result = await _cascoRepository.UpdateCasco(id, cascoInsurance);
         if (result is null)
             return NotFound();
         
@@ -50,7 +48,7 @@ public class CascoController : Controller
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult<Casco>> DeleteCasco(int id)
+    public async Task<ActionResult<CascoInsurance>> DeleteCasco(int id)
     {
         var result = await _cascoRepository.DeleteCasco(id);
         if (result is null)
