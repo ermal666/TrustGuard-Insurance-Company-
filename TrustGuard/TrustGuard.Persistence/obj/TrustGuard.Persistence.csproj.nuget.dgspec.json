@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/TrustGuard.Persistence.csproj": {}
+    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {}
   },
   "projects": {
-    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/TrustGuard.Domain.csproj": {
+    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/TrustGuard.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
         "projectName": "TrustGuard.Domain",
-        "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/TrustGuard.Domain.csproj",
-        "packagesPath": "/Users/ermal/.nuget/packages/",
-        "outputPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/",
+        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
+        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ermal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,34 +65,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/TrustGuard.Persistence.csproj": {
+    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/TrustGuard.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
         "projectName": "TrustGuard.Persistence",
-        "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/TrustGuard.Persistence.csproj",
-        "packagesPath": "/Users/ermal/.nuget/packages/",
-        "outputPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/",
+        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
+        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ermal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/TrustGuard.Domain.csproj": {
-                "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/TrustGuard.Domain.csproj"
+              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
               }
             }
           }
@@ -120,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

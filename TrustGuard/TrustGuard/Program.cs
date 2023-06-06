@@ -11,12 +11,15 @@ services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DeafaultConnection")));
+// services.AddDbContext<AppDbContext>(options =>
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("DeafaultConnection")));
+services.AddDbContext<AppDbContext>();
 
 services.AddScoped<IUserRepository, UserRepository>();
 services.AddScoped<IUserService, UserService>();
 services.AddScoped<ICascoRepository, CascoRepository>();
+services.AddScoped<ITPLRepository, TPLRepository>();
+services.AddScoped<IHealthRepository, HealthRepository>();
 
 var app = builder.Build();
 

@@ -15,6 +15,10 @@ namespace TrustGuard.Domain
         public DbSet<Insurance> Insurances { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<Casco> Cascos { get; set; }
+        public DbSet<HealthInsurance> HealthInsurances { get; set; }
+        public DbSet<Offer> Offers { get; set; }
+
+
 
 
     }
