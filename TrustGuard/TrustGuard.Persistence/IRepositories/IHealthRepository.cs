@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TrustGuard.Domain.Models;
 
 namespace TrustGuard.Persistence.IRepositories;
