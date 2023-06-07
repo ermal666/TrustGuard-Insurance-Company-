@@ -4,6 +4,8 @@ using TrustGuard.Persistence.IRepositories;
 
 namespace TrustGuard.Application.Controllers;
 
+[Route("api/[controller]/[action]")]
+[ApiController]
 public class TPLController : ControllerBase
 {
     private readonly ITPLRepository _tplRepository;

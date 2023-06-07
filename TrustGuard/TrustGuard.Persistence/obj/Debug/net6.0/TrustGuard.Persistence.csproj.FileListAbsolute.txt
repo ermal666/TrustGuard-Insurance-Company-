@@ -1,0 +1,17 @@
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.deps.json
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.runtimeconfig.json
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.AssemblyReference.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.AssemblyInfoInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.AssemblyInfo.cs
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.CoreCompileInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.CopyComplete
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/refint/TrustGuard.Persistence.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.genruntimeconfig.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Persistence/obj/Debug/net6.0/ref/TrustGuard.Persistence.dll

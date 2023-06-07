@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace TrustGuard.Domain.Models;
 
-public class Casco
+public class CascoInsurance
 {
     [Key]
     public int Id { get; set; }
@@ -21,6 +22,13 @@ public class Casco
     public int? SeatingCapacity { get; set; }
     [Required(ErrorMessage = "PurchaseDate is required.")]
     public DateTime PurchaseDate { get; set; }
-    [Required(ErrorMessage = "Please choose on offer.")]
-    public string Offer { get; set; }
+    //[Required(ErrorMessage = "Please choose on offer.")]
+    //public string Offer { get; set; }
+    
+    public int UserId { get; set; }
+    public User User { get; set; }
+    
+    public int OfferId { get; set; }
+    public Offer Offer { get; set; }
+    
 }

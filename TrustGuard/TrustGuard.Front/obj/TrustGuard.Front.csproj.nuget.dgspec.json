@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj": {}
+  },
+  "projects": {
+    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj",
+        "projectName": "TrustGuard.Front",
+        "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj",
+        "packagesPath": "/Users/ermal/.nuget/packages/",
+        "outputPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ermal/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

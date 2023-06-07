@@ -1,4 +1,3 @@
-using System.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 using TrustGuard.Domain;
 using TrustGuard.Domain.Models;

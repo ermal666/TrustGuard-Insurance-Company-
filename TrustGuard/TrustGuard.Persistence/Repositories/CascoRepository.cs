@@ -14,13 +14,13 @@ public class CascoRepository : ICascoRepository
         _context = context;
     }
     
-    public async Task<List<Casco>> GetAll()
+    public async Task<List<CascoInsurance>> GetAll()
     {
         var insurances = await _context.Cascos.ToListAsync();
         return insurances;
     }
 
-    public async Task<Casco> GetSingleCasco(int id)
+    public async Task<CascoInsurance> GetSingleCasco(int id)
     {
         var cascoInsurance = await _context.Cascos.FindAsync(id);
         if (cascoInsurance is null)
@@ -29,37 +29,37 @@ public class CascoRepository : ICascoRepository
         return cascoInsurance;
     }
 
-    public async Task<List<Casco>> AddCasco(Casco casco)
+    public async Task<List<CascoInsurance>> AddCasco(CascoInsurance cascoInsurance)
     {
-        _context.Cascos.Add(casco);
+        _context.Cascos.Add(cascoInsurance);
         await _context.SaveChangesAsync();
 
         var cascoInsurances = await _context.Cascos.ToListAsync();
         return cascoInsurances;
     }
 
-    public async Task<List<Casco>> UpdateCasco(int id, Casco casco)
+    public async Task<List<CascoInsurance>> UpdateCasco(int id, CascoInsurance cascoInsurance)
     {
         var existingCasco = await _context.Cascos.FindAsync(id);
         if (existingCasco is null)
             return null;
 
-        existingCasco.VinNumber = casco.VinNumber;
-        existingCasco.CarModel = casco.CarModel;
-        existingCasco.Plate = casco.Plate;
-        existingCasco.Producer = casco.Producer;
-        existingCasco.Color = casco.Color;
-        existingCasco.EngineCapacity = casco.EngineCapacity;
-        existingCasco.SeatingCapacity = casco.SeatingCapacity;
-        existingCasco.PurchaseDate = casco.PurchaseDate;
-        existingCasco.Offer = casco.Offer;
+        existingCasco.VinNumber = cascoInsurance.VinNumber;
+        existingCasco.CarModel = cascoInsurance.CarModel;
+        existingCasco.Plate = cascoInsurance.Plate;
+        existingCasco.Producer = cascoInsurance.Producer;
+        existingCasco.Color = cascoInsurance.Color;
+        existingCasco.EngineCapacity = cascoInsurance.EngineCapacity;
+        existingCasco.SeatingCapacity = cascoInsurance.SeatingCapacity;
+        existingCasco.PurchaseDate = cascoInsurance.PurchaseDate;
+        existingCasco.Offer = cascoInsurance.Offer;
 
         await _context.SaveChangesAsync();
         var updatedCascoList = await _context.Cascos.ToListAsync();
         return updatedCascoList;
     }
 
-    public async Task<Casco> DeleteCasco(int id)
+    public async Task<CascoInsurance> DeleteCasco(int id)
     {
         var existingCasco = await _context.Cascos.FindAsync(id);
         if (existingCasco is null)

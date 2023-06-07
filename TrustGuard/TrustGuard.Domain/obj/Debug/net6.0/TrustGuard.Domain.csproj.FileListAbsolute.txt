@@ -1,0 +1,14 @@
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.deps.json
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.runtimeconfig.json
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.AssemblyReference.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.AssemblyInfoInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.AssemblyInfo.cs
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.CoreCompileInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/refint/TrustGuard.Domain.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.genruntimeconfig.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Domain/obj/Debug/net6.0/ref/TrustGuard.Domain.dll

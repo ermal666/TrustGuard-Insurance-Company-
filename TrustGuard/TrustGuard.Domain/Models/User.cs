@@ -1,8 +1,9 @@
-﻿namespace TrustGuard.Domain.Models
+﻿
+namespace TrustGuard.Domain.Models
 {
-    public class User
+    public class User 
     {
-        public int Id { get; set; }
+        public int UserId { get; set; }
         public string? PersonalId { get; set; }
         public string? FullName { get; set; }
         public DateTime BirthDate { get; set; }
