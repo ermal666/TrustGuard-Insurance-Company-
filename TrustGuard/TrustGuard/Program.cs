@@ -23,6 +23,18 @@ services.AddDbContext<AppDbContext>();
 // adding jwt configuration
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 
+var key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection("JwtConfig:Secret").Value);
+
+var tokenValidationParameters = new TokenValidationParameters()
+{
+    ValidateIssuerSigningKey = true,
+    IssuerSigningKey = new SymmetricSecurityKey(key),
+    ValidateIssuer = false, // update when you add refresh tokens
+    ValidateAudience = false, // update when you add refresh tokens
+    RequireExpirationTime = false, // update when you add refresh tokens
+    ValidateLifetime = true
+};
+
 // adding authentication
 builder.Services.AddAuthentication(options =>
 {
@@ -32,20 +44,10 @@ builder.Services.AddAuthentication(options =>
 })
     .AddJwtBearer(jwt =>
     {
-        var key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection("JwtConfig:Secret").Value);
-
         jwt.SaveToken = true;
-        jwt.TokenValidationParameters = new TokenValidationParameters()
-        {
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateIssuer = false, // update when you add refresh tokens
-            ValidateAudience = false, // update when you add refresh tokens
-            RequireExpirationTime = false, // update when you add refresh tokens
-            ValidateLifetime = true
-        };
-
+        jwt.TokenValidationParameters = tokenValidationParameters;
     });
+builder.Services.AddSingleton(tokenValidationParameters);
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedEmail = false)
     .AddEntityFrameworkStores<AppDbContext>();

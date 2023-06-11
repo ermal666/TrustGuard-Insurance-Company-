@@ -28,6 +28,7 @@ namespace TrustGuard.Domain
         public DbSet<HealthInsurance> HealthInsurances { get; set; }
         public DbSet<TPLInsurance> TPLInsurances { get; set; }
         public DbSet<Offer> Offers { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
 
     }

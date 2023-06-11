@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using RestSharp;
 using RestSharp.Authenticators;
-using TrustGuard.Domain.Configurations;
+using TrustGuard.Domain;
 using TrustGuard.Domain.DTOs;
 using TrustGuard.Domain.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace TrustGuard.Application.Controllers;
 
@@ -19,14 +21,20 @@ public class AuthenticationController : ControllerBase
     private readonly UserManager<IdentityUser> _userManager;
     //private readonly JwtConfig _jwtConfig;
     private readonly IConfiguration _configuration;
+    private readonly AppDbContext _context;
+    private readonly TokenValidationParameters _tokenValidationParameters;
 
     public AuthenticationController(UserManager<IdentityUser> userManager, 
-                                    IConfiguration configuration
+                                    IConfiguration configuration,
+                                    AppDbContext context,
+                                    TokenValidationParameters tokenValidationParameters
                                     //JwtConfig jwtConfig
                                     )
     {
         _userManager = userManager;
         _configuration = configuration;
+        _context = context;
+        _tokenValidationParameters = tokenValidationParameters;
         //_jwtConfig = jwtConfig;
     }
 
@@ -132,7 +140,7 @@ public class AuthenticationController : ControllerBase
             });
         }
 
-        code = Encoding.UTF8.GetString(Convert.FromBase64String(code));
+        //code = Encoding.UTF8.GetString(Convert.FromBase64String(code));
         var result = await _userManager.ConfirmEmailAsync(user, code);
         var status = result.Succeeded
             ? "Thank you for confirming your email"
@@ -184,13 +192,9 @@ public class AuthenticationController : ControllerBase
                         Result = false
                     });
 
-                var jwtToken = GenerateJwtToken(existingUser);
+                var jwtToken = await GenerateJwtToken(existingUser);
 
-                return Ok(new AuthResult()
-                {
-                    Token = jwtToken,
-                    Result = true
-                });
+                return Ok(jwtToken);
         }
 
         return BadRequest(new AuthResult()
@@ -203,7 +207,7 @@ public class AuthenticationController : ControllerBase
         });
     }
 
-    private string GenerateJwtToken(IdentityUser user)
+    private async Task<AuthResult> GenerateJwtToken(IdentityUser user)
     {
         var jwtTokenHandeler = new JwtSecurityTokenHandler();
 
@@ -223,12 +227,186 @@ public class AuthenticationController : ControllerBase
             }),
 
             // adding token expiry time
-            Expires = DateTime.Now.AddMinutes(30),
+            Expires = DateTime.UtcNow.Add(TimeSpan.Parse(_configuration.GetSection("JwtConfig:ExpiryTimeFrame").Value)),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
         };
 
         var token = jwtTokenHandeler.CreateToken(tokenDescriptor);
-        return jwtTokenHandeler.WriteToken(token);
+        var jwtToken = jwtTokenHandeler.WriteToken(token);
+        
+        var refreshToken = new RefreshToken()
+        {
+            JwtId = token.Id,
+            Token = GenerateRandomString(23),
+            AddedDate = DateTime.UtcNow,
+            ExpiryDate = DateTime.UtcNow.AddMonths(6),
+            IsRevoked = false,
+            IsUsed = false,
+            UserId = user.Id
+        };
+
+        await _context.RefreshTokens.AddAsync(refreshToken);
+        await _context.SaveChangesAsync();
+        
+        return new AuthResult()
+        {
+            Token = jwtToken,
+            RefreshToken = refreshToken.Token,
+            Result = true
+        };
+        
+    }
+    
+    [HttpPost]
+    [Route("RefreshToken")] 
+    public async Task<IActionResult> RefreshToken([FromBody] TokenRequest tokenRequest)
+    {
+        if (ModelState.IsValid)
+        {
+            var result = await VerifyAndGenerateToken(tokenRequest);
+            if (result == null)
+                return BadRequest(new AuthResult()
+                {
+                    Errors = new List<string>()
+                    {
+                        "Invalid Parameters"
+                    },
+                    Result = false
+                });
+            return Ok(result);
+            
+        }
+        return BadRequest(new AuthResult()
+        {
+            Errors = new List<string>()
+            {
+                "Invalid Parameters"
+            },
+            Result = false
+        });
+        
+    }
+
+    private async Task<AuthResult> VerifyAndGenerateToken(TokenRequest tokenRequest)
+    {
+        var jwtTokenHandler = new JwtSecurityTokenHandler();
+
+        try
+        {
+            _tokenValidationParameters.ValidateLifetime = false; // for testing 
+
+            var tokenInVerfication =
+                jwtTokenHandler.ValidateToken(tokenRequest.Token, _tokenValidationParameters, out var validatedToken);
+
+            if (validatedToken is JwtSecurityToken jwtSecurityToken)
+            {
+                var result = jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256,
+                    StringComparison.InvariantCultureIgnoreCase);
+
+                if (result == false)
+                {
+                    return null;
+                }
+            }
+
+            var utcExpiryDate = long.Parse(tokenInVerfication.Claims
+                .FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Exp).Value);
+
+            var expiryDate = UnixTimeStampToDateTime(utcExpiryDate);
+            if (expiryDate > DateTime.Now)
+            {
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Expired Token"
+                    }
+                };
+            }
+
+            var storedToken = await _context.RefreshTokens.FirstOrDefaultAsync(x => x.Token == tokenRequest.RefreshToken);
+            
+            if (storedToken == null)
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Expired Token"
+                    }
+                };
+
+            if (storedToken.IsUsed)
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Token is used"
+                    }
+                };
+
+            if (storedToken.IsRevoked)
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Token is revoked"
+                    }
+                };
+
+
+            var jti = tokenInVerfication.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Jti).Value;
+
+            if (storedToken.JwtId != jti)
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Expired Token"
+                    }
+                };
+
+
+            if (storedToken.ExpiryDate < DateTime.UtcNow)
+                return new AuthResult()
+                {
+                    Result = false,
+                    Errors = new List<string>()
+                    {
+                        "Invalid Token"
+                    }
+                };
+
+            storedToken.IsUsed = true;
+            _context.RefreshTokens.Update(storedToken);
+            await _context.SaveChangesAsync();
+
+            var dbUser = await _userManager.FindByIdAsync(storedToken.UserId);
+            return await GenerateJwtToken(dbUser);
+
+        }
+        catch (Exception e)
+        {
+            return new AuthResult()
+            {
+                Result = false,
+                Errors = new List<string>()
+                {
+                    "Server Error"
+                }
+            };
+        }
+
+    }
+    private DateTime UnixTimeStampToDateTime(long unixTimeStamp)
+    {
+        var dateTimeVal = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+        dateTimeVal = dateTimeVal.AddSeconds(unixTimeStamp).ToUniversalTime();
+        return dateTimeVal;
     }
 
     private bool SendEmail(string body, string email)
@@ -242,11 +420,11 @@ public class AuthenticationController : ControllerBase
             new HttpBasicAuthenticator("api", _configuration.GetSection("EmailConfig:API_KEY").Value);
         
 
-        request.AddParameter("domain", "sandboxd03b10b0dfa2499db9fc4378f3a903fb.mailgun.org", ParameterType.UrlSegment);
+        request.AddParameter("domain", "sandboxc19fe585f39d43e39f72f6b102f28226.mailgun.org", ParameterType.UrlSegment);
         request.Resource = "{domain}/messages";
         request.AddParameter("from",
-            "TrustGuard Service <postmaster@sandboxd03b10b0dfa2499db9fc4378f3a903fb.mailgun.org>");
-        request.AddParameter("to", "ermalkk14@gmail.com");
+            "TrustGuard Service <postmaster@sandboxc19fe585f39d43e39f72f6b102f28226.mailgun.org>");
+        request.AddParameter("to", "Trust Guard <trustguard.ks@gmail.com>");
         request.AddParameter("subject", "Email Verification");
         request.AddParameter("text", body);
         request.Method = Method.Post;
@@ -254,6 +432,14 @@ public class AuthenticationController : ControllerBase
         var response = client.Execute(request);
         return response.IsSuccessful;
 
+    }
+
+    private string GenerateRandomString(int length)
+    {
+        var random = new Random();
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz_";
+
+        return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
     }
 
 }
