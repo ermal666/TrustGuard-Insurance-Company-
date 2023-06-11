@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zYeovnba9AWm7XkzAF0hsQLDKfrBD8jhktIu1zTdPvY=",
+  "Source": "TrustGuard.Application",
+  "BasePath": "_content/TrustGuard.Application",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

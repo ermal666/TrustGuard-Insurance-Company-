@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L2sLrxJWIIdKaS1Q8qSMzNLje8Qqrs0DIOfq+fMw7UTMXdfMmFGBEE3ShZKbxo98o5iPR5fKiN7Ln7Cic9aytg==",
+  "dgSpecHash": "LQx7LvTdt3TlmLNdCzToljsoBOg2ddUnKEVMNPJzfUpURsJ7x/CoudwFWoMp473J2t00haDJJ6eD8/xTXDWqJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
