@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustGuard.Service", "Trust
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustGuard.Persistence", "TrustGuard.Persistence\TrustGuard.Persistence.csproj", "{D30079E4-E9D3-4357-92B9-A54897E862A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrustGuard.Front", "TrustGuard.Front\TrustGuard.Front.csproj", "{29FCA8E4-26EA-4EA2-9824-C0CCC7CDDA11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D30079E4-E9D3-4357-92B9-A54897E862A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30079E4-E9D3-4357-92B9-A54897E862A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30079E4-E9D3-4357-92B9-A54897E862A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FCA8E4-26EA-4EA2-9824-C0CCC7CDDA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FCA8E4-26EA-4EA2-9824-C0CCC7CDDA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FCA8E4-26EA-4EA2-9824-C0CCC7CDDA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FCA8E4-26EA-4EA2-9824-C0CCC7CDDA11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

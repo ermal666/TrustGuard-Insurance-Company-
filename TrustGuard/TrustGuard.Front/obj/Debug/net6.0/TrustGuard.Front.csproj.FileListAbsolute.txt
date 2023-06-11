@@ -1,0 +1,12 @@
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/bin/Debug/net6.0/TrustGuard.Front.deps.json
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/bin/Debug/net6.0/TrustGuard.Front.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/bin/Debug/net6.0/TrustGuard.Front.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.csproj.AssemblyReference.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.AssemblyInfoInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.AssemblyInfo.cs
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.csproj.CoreCompileInputs.cache
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/refint/TrustGuard.Front.dll
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.pdb
+/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/Debug/net6.0/ref/TrustGuard.Front.dll
