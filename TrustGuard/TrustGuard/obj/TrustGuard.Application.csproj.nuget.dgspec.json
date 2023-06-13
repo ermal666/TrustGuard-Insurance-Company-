@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
         "projectName": "TrustGuard.Domain",
-        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
-        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,6 +69,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.1, )"
             }
           },
           "imports": [
@@ -77,8 +81,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -87,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
         "projectName": "TrustGuard.Persistence",
-        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
-        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,8 +118,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
               }
             }
           }
@@ -154,8 +157,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -164,21 +166,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj": {
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj",
         "projectName": "TrustGuard.Service",
-        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj",
-        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -192,11 +194,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
               },
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj"
               }
             }
           }
@@ -234,8 +236,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -244,21 +245,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj": {
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj",
         "projectName": "TrustGuard.Application",
-        "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj",
-        "packagesPath": "C:\\Users\\hp zbook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\TrustGuard.Application.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp zbook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -272,14 +273,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
               },
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj"
               },
-              "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj": {
-                "projectPath": "C:\\Users\\hp zbook\\OneDrive\\Desktop\\Trust\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj"
+              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Service\\TrustGuard.Service.csproj"
               }
             }
           }
@@ -294,6 +295,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
@@ -324,6 +329,10 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -335,8 +344,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -348,7 +356,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }

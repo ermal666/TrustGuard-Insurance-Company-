@@ -8,7 +8,7 @@ using TrustGuard.Domain;
 
 #nullable disable
 
-namespace TrustGuard.Application.Migrations
+namespace TrustGuard.Domain.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -234,51 +234,12 @@ namespace TrustGuard.Application.Migrations
                     b.Property<string>("Model")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("OwnerId")
+                    b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cars");
-                });
-
-            modelBuilder.Entity("TrustGuard.Domain.Models.CascoInsurance", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CarModel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Color")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("EngineCapacity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OfferId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Plate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Producer")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("PurchaseDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("SeatingCapacity")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.HasIndex("Id");
 
                     b.Property<string>("VinNumber")
                         .IsRequired()
@@ -290,10 +251,10 @@ namespace TrustGuard.Application.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Cascos");
+                    b.ToTable("Cars");
                 });
 
-            modelBuilder.Entity("TrustGuard.Domain.Models.HealthInsurance", b =>
+            modelBuilder.Entity("TrustGuard.Domain.Models.Insurance", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -301,27 +262,21 @@ namespace TrustGuard.Application.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("OfferId")
+                    b.Property<int>("InsuredProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PaymentOption")
+                    b.Property<int>("LevelId")
                         .HasColumnType("int");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("UserId")
+                    b.Property<int>("TypeId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OfferId");
+                    b.HasIndex("Id");
 
                     b.HasIndex("UserId");
 
@@ -383,15 +338,7 @@ namespace TrustGuard.Application.Migrations
                     b.Property<int>("PropertyType")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Properties");
-                });
-
-            modelBuilder.Entity("TrustGuard.Domain.Models.TPLInsurance", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
@@ -427,20 +374,20 @@ namespace TrustGuard.Application.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OfferId");
+                    b.HasIndex("Id");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TPLInsurances");
+                    b.ToTable("Properties");
                 });
 
             modelBuilder.Entity("TrustGuard.Domain.Models.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
@@ -460,63 +407,14 @@ namespace TrustGuard.Application.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("Id");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("TrustGuard.Domain.Models.CascoInsurance", b =>
+            modelBuilder.Entity("TrustGuard.Domain.Models.Car", b =>
                 {
                     b.HasOne("TrustGuard.Domain.Models.Offer", "Offer")
                         .WithMany()
@@ -525,17 +423,13 @@ namespace TrustGuard.Application.Migrations
                         .IsRequired();
 
                     b.HasOne("TrustGuard.Domain.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Offer");
+                        .WithMany("Cars")
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TrustGuard.Domain.Models.HealthInsurance", b =>
+            modelBuilder.Entity("TrustGuard.Domain.Models.Property", b =>
                 {
                     b.HasOne("TrustGuard.Domain.Models.Offer", "Offer")
                         .WithMany()
@@ -544,49 +438,17 @@ namespace TrustGuard.Application.Migrations
                         .IsRequired();
 
                     b.HasOne("TrustGuard.Domain.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Offer");
+                        .WithMany("Properties")
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TrustGuard.Domain.Models.Offer", b =>
+            modelBuilder.Entity("TrustGuard.Domain.Models.User", b =>
                 {
-                    b.HasOne("TrustGuard.Domain.Models.Insurance", "Insurance")
-                        .WithMany("Offers")
-                        .HasForeignKey("InsuranceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Cars");
 
-                    b.Navigation("Insurance");
-                });
-
-            modelBuilder.Entity("TrustGuard.Domain.Models.TPLInsurance", b =>
-                {
-                    b.HasOne("TrustGuard.Domain.Models.Offer", "Offer")
-                        .WithMany()
-                        .HasForeignKey("OfferId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TrustGuard.Domain.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Offer");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TrustGuard.Domain.Models.Insurance", b =>
-                {
-                    b.Navigation("Offers");
+                    b.Navigation("Properties");
                 });
 #pragma warning restore 612, 618
         }

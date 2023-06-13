@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj": {}
   },
   "projects": {
-    "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj": {
+    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj",
         "projectName": "TrustGuard.Front",
-        "projectPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/TrustGuard.Front.csproj",
-        "packagesPath": "/Users/ermal/.nuget/packages/",
-        "outputPath": "/Users/ermal/Desktop/SEM-6/LAB-2/TrustGuard-Insurance-Company/TrustGuard/TrustGuard.Front/obj/",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ermal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -53,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }

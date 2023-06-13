@@ -1,12 +1,19 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "Hash": "zYeovnba9AWm7XkzAF0hsQLDKfrBD8jhktIu1zTdPvY=",
+=======
   "Hash": "G4zBhAtUdV9qsWyTXYVX0ISzBIvvJccE4MKdLNGDqks=",
+>>>>>>> 278a5597aa0f3c4bbf58fe88408532b2dc031005
   "Source": "TrustGuard.Application",
   "BasePath": "_content/TrustGuard.Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
+<<<<<<< HEAD
+  "Assets": []
+=======
   "Assets": [
     {
       "Identity": "/Users/ermal/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.16/staticwebassets/V5/css/site.css",
@@ -1029,4 +1036,5 @@
       "OriginalItemSpec": "/Users/ermal/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.16/staticwebassets/V5/lib/jquery/LICENSE.txt"
     }
   ]
+>>>>>>> 278a5597aa0f3c4bbf58fe88408532b2dc031005
 }
