@@ -1,10 +1,15 @@
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Stripe;
 using TrustGuard.Domain;
 using TrustGuard.Domain.Configurations;
+using TrustGuard.Domain.Models;
 using TrustGuard.Persistence.IRepositories;
 using TrustGuard.Persistence.Repositories;
 using TrustGuard.Service.IServices;
@@ -19,6 +24,9 @@ services.AddSwaggerGen();
 // services.AddDbContext<AppDbContext>(options =>
 //     options.UseSqlServer(builder.Configuration.GetConnectionString("DeafaultConnection")));
 services.AddDbContext<AppDbContext>();
+
+// adding Stripe configuration
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
 // adding jwt configuration
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
@@ -49,7 +57,7 @@ builder.Services.AddAuthentication(options =>
     });
 builder.Services.AddSingleton(tokenValidationParameters);
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedEmail = false)
+builder.Services.AddIdentity<User, IdentityRole>(options => options.SignIn.RequireConfirmedEmail = false)
     .AddEntityFrameworkStores<AppDbContext>();
 
 // dependency injection
@@ -58,6 +66,7 @@ services.AddScoped<IUserService, UserService>();
 services.AddScoped<ICascoRepository, CascoRepository>();
 services.AddScoped<ITPLRepository, TPLRepository>();
 services.AddScoped<IHealthRepository, HealthRepository>();
+services.AddScoped<IAccidentRepository, AccidentRepository>();
 
 var app = builder.Build();
 
@@ -68,6 +77,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
+
+// stripe configuration
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 
 app.UseRouting();
 app.UseCors();

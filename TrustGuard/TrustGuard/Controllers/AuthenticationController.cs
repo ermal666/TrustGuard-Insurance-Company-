@@ -1,6 +1,10 @@
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -10,6 +14,7 @@ using TrustGuard.Domain;
 using TrustGuard.Domain.DTOs;
 using TrustGuard.Domain.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 
 namespace TrustGuard.Application.Controllers;
@@ -18,13 +23,13 @@ namespace TrustGuard.Application.Controllers;
 [ApiController]
 public class AuthenticationController : ControllerBase
 {
-    private readonly UserManager<IdentityUser> _userManager;
+    private readonly UserManager<User> _userManager;
     //private readonly JwtConfig _jwtConfig;
     private readonly IConfiguration _configuration;
     private readonly AppDbContext _context;
     private readonly TokenValidationParameters _tokenValidationParameters;
 
-    public AuthenticationController(UserManager<IdentityUser> userManager, 
+    public AuthenticationController(UserManager<User> userManager, 
                                     IConfiguration configuration,
                                     AppDbContext context,
                                     TokenValidationParameters tokenValidationParameters
@@ -61,11 +66,16 @@ public class AuthenticationController : ControllerBase
             }
             
             // create a user
-            var newUser = new IdentityUser()
+            var newUser = new User()
             {
+                PersonalId = registrationRequest.PersonalId,
+                UserName = registrationRequest.FullName,
+                BirthDate = registrationRequest.BirthDate,
+                Address = registrationRequest.Address,
+                PhoneNumber = registrationRequest.PhoneNumber,
                 Email = registrationRequest.Email,
-                UserName = registrationRequest.Email,
                 EmailConfirmed = false
+
             };
 
             var isCreated = await _userManager.CreateAsync(newUser, registrationRequest.Password);

@@ -22,7 +22,7 @@ namespace TrustGuard.Service.Services
         public async Task<List<User>> GetUsersPaged(int pageIndex, int pageSize)
         {
             var users = await _userRepository.GetAllUsers()
-                                                    .OrderByDescending(x => x.UserId)
+                                                    .OrderByDescending(x => x.Id)
                                                     .Skip((pageIndex - 1) * pageSize)
                                                     .Take(pageSize)
                                                     .ToListAsync();
@@ -31,13 +31,13 @@ namespace TrustGuard.Service.Services
 
         public async Task<User> GetUser(int id)
         {
-            var user = await _userRepository.GetUserById(x => x.UserId == id).FirstOrDefaultAsync();
+            var user = await _userRepository.GetUserById(x => x.Id == id.ToString()).FirstOrDefaultAsync();
             return user ?? new User();
         }
 
         public async Task DeleteUser(int id)
         {
-            var user = await _userRepository.GetUserById(x => x.UserId == id).FirstOrDefaultAsync();
+            var user = await _userRepository.GetUserById(x => x.Id == id.ToString()).FirstOrDefaultAsync();
             _userRepository.Delete(user);
             await _userRepository.SaveChangesAsync();
         }
