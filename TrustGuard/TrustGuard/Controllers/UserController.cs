@@ -1,6 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TrustGuard.Application.Dtos;
 using TrustGuard.Domain.Models;
 using TrustGuard.Service.IServices;
 
@@ -11,10 +10,9 @@ namespace TrustGuard.Application.Controllers
     public class UserController : Controller
     {
         private readonly IUserService _userService;
-        private readonly IMapper _mapper;
-        public UserController(IUserService userService, IMapper mapper)
+
+        public UserController(IUserService userService)
         {
-            _mapper = mapper;
             _userService = userService;
         }
 
@@ -41,9 +39,8 @@ namespace TrustGuard.Application.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser(CreateUserDto userDto)
+        public async Task<IActionResult> CreateUser(User user)
         {
-            var user = _mapper.Map<User>(userDto);
             var isCreated = await _userService.CreateUser(user);
             if (isCreated)
             {

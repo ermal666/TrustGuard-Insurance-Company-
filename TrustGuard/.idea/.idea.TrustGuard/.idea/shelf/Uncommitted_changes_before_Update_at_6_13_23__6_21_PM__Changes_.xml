@@ -1,0 +1,279 @@
+<changelist name="Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]" date="1686673264397" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/13/23, 6:21 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/refint/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/refint/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/ref/TrustGuard.Application.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/ref/TrustGuard.Application.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.assets.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/ref/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/ref/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Front/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Front/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/project.nuget1.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/project.nuget2.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/refint/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/refint/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain4.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.assets.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain5.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Application.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Application.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain2.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/refint/TrustGuard.Application.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/refint/TrustGuard.Application.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.assets.cache" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain3.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service1.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.assets.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Front.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/project.nuget3.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/ref/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/ref/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence4.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/Debug/net6.0/TrustGuard.Domain.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/ref/TrustGuard.Service.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/ref/TrustGuard.Service.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service2.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/project.nuget4.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.assets.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence2.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Persistence.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence3.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/refint/TrustGuard.Service.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/refint/TrustGuard.Service.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Front/obj/Debug/net6.0/TrustGuard.Front.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Front.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Application.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Application.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service2.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/bin/Debug/net6.0/TrustGuard.Domain.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain4.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.csproj.CoreCompileInputs.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.csproj.CoreCompileInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service.csproj.CoreCompileInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Persistence/obj/Debug/net6.0/TrustGuard.Persistence.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/bin/Debug/net6.0/TrustGuard.Persistence.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Persistence5.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/bin/Debug/net6.0/TrustGuard.Service.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service4.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="TrustGuard.Service/obj/Debug/net6.0/TrustGuard.Service.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Service.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.dll" />
+    <option name="AFTER_PATH" value="TrustGuard/obj/Debug/net6.0/TrustGuard.Application.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Application3.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="AFTER_PATH" value="TrustGuard.Domain/bin/Debug/net6.0/TrustGuard.Domain.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.TrustGuard/.idea/shelf/Uncommitted_changes_before_Update_at_6_13_23,_6_21_PM_[Changes]/TrustGuard.Domain6.dll" />
+  </binary>
+</changelist>

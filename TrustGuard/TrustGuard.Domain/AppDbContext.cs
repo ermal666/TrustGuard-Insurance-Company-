@@ -15,7 +15,7 @@ namespace TrustGuard.Domain
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost; Database=TrustGuard;  User Id=sa; Password=Maliko321; TrustServerCertificate=true");
+                optionsBuilder.UseSqlServer("Server=localhost; Database=TrustGuard; TrustServerCertificate=true");
             }
         }
 
@@ -29,8 +29,7 @@ namespace TrustGuard.Domain
         public DbSet<TPLInsurance> TPLInsurances { get; set; }
         public DbSet<Offer> Offers { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
-
-
+        public DbSet<AccidentInsurance> AccidentInsurances { get; set; }
     }
 
 }
