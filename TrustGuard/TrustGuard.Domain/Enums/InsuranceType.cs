@@ -8,9 +8,12 @@ namespace TrustGuard.Domain.Enums
 {
     public enum InsuranceType
     {
-        Car = 0,
-        Property = 1,
-        Individual = 2,
+        Casco = 1,
+        Tpl = 2,
+        Appartment = 3,
+        House = 4,
+        Health = 5,
+        Accident = 6,
     }
 
     public enum InsuranceLevel
