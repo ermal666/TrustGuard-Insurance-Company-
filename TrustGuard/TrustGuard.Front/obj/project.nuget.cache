@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "Id615/afEnDl7PYZSoKW+dRe22xg1DEBrEdlAEduXx/uLVF7aMsaydk87wVyfEL4cFUZym4/lIHHHfzK0y1IjA==",
+  "dgSpecHash": "jax5bc2uKl+07D+OyGMI0ecWhkibcHSCvgEdVt4o7j8nBYhPX1yLwpN+sS2mzINxXw7+hLQj1zfWSvGO1uutsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\stripe.net\\41.20.0\\stripe.net.41.20.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
