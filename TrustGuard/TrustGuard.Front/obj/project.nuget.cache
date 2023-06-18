@@ -1,18 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ESaPG4yrCOseFg10YyRFr/lCR8KMe8obVtntdKFqCYsG6viXhRopc7GHbxrqIjn30L7fqNXL8z4POcRq6eE0Bw==",
+  "dgSpecHash": "c0pXbIAYb045skKM6YBIuiHbdDQxpoE1XRLwuS/um790b8cCmrcDlWH67milsG5u+E0J8v3h/lZE9McnSrvbQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\TrustGuard.Front.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\stripe.net\\41.20.0\\stripe.net.41.20.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
-  ],
-  "logs": []
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Front\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

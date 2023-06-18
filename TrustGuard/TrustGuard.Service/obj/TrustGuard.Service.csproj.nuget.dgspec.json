@@ -73,10 +73,6 @@
             "RestSharp": {
               "target": "Package",
               "version": "[108.0.1, )"
-            },
-            "Stripe.net": {
-              "target": "Package",
-              "version": "[41.20.0, )"
             }
           },
           "imports": [
@@ -154,10 +150,6 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
-            },
-            "Stripe.net": {
-              "target": "Package",
-              "version": "[41.20.0, )"
             }
           },
           "imports": [
@@ -238,10 +230,6 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
-            },
-            "Stripe.net": {
-              "target": "Package",
-              "version": "[41.20.0, )"
             }
           },
           "imports": [
