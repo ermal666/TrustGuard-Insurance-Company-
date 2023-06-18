@@ -12,6 +12,5 @@ namespace TrustGuard.Domain.Models
         public User User { get; set; }
         public double Price { get; set; }
         public int InsuranceType { get; set; }
-        public DateTime PaymentDate { get; set; }
     }
 }
