@@ -29,7 +29,7 @@ namespace TrustGuard.Service.Services
             return users;
         }
 
-        public async Task<User> GetUser(int id)
+        public async Task<User> GetUser(string id)
         {
             var user = await _userRepository.GetUserById(x => x.Id == id.ToString()).FirstOrDefaultAsync();
             return user ?? new User();
