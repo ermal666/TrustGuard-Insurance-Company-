@@ -8,9 +8,9 @@ namespace TrustGuard.Domain.Models
 {
     public class Insurance
     {
-        public int InsuranceId { get; set; }
+        public int Id { get; set; }
         public string? InsuranceType { get; set; }
-        
         public ICollection<Offer> Offers { get; set; }
     }
+
 }

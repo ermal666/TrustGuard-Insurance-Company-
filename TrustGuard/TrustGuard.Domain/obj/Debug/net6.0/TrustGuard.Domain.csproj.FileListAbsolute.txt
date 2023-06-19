@@ -26,3 +26,17 @@ C:\Users\Asus\Desktop\TrustGuard\TrustGuard-Insurance-Company-\TrustGuard\TrustG
 C:\Users\Asus\Desktop\TrustGuard\TrustGuard-Insurance-Company-\TrustGuard\TrustGuard.Domain\bin\Debug\net6.0\TrustGuard.Domain.pdb
 C:\Users\Asus\Desktop\TrustGuard\TrustGuard-Insurance-Company-\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.genruntimeconfig.cache
 C:\Users\Asus\Desktop\TrustGuard\TrustGuard-Insurance-Company-\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\ref\TrustGuard.Domain.dll
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\bin\Debug\net6.0\TrustGuard.Domain.deps.json
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\bin\Debug\net6.0\TrustGuard.Domain.runtimeconfig.json
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\bin\Debug\net6.0\TrustGuard.Domain.dll
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\bin\Debug\net6.0\TrustGuard.Domain.pdb
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.csproj.AssemblyReference.cache
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.AssemblyInfoInputs.cache
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.AssemblyInfo.cs
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.dll
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\refint\TrustGuard.Domain.dll
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.pdb
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\TrustGuard.Domain.genruntimeconfig.cache
+C:\Users\dijam\Downloads\bruhh\Trailers\TrustGuard\TrustGuard.Domain\obj\Debug\net6.0\ref\TrustGuard.Domain.dll

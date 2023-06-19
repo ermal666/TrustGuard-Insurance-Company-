@@ -25,10 +25,10 @@ public class CascoInsurance
     //[Required(ErrorMessage = "Please choose on offer.")]
     //public string Offer { get; set; }
     
-    public int UserId { get; set; }
-    public User User { get; set; }
+    public string UserId { get; set; }
+    public User? User { get; set; }
     
     public int OfferId { get; set; }
-    public Offer Offer { get; set; }
+    public Offer? Offer { get; set; }
     
 }

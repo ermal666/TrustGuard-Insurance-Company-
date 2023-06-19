@@ -10,14 +10,14 @@ namespace TrustGuard.Domain
         {
 
         }
-        
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer("Server=localhost; Database=TrustGuard; TrustServerCertificate=true");
-            }
-        }
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder
+        //        .UseSqlServer("Data Source=localhost;Database=TrustGuard;Trusted_Connection=True;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true")
+        //        .EnableSensitiveDataLogging();
+        //}
+
 
 
         public DbSet<User> Users { get; set; }
@@ -30,6 +30,7 @@ namespace TrustGuard.Domain
         public DbSet<Offer> Offers { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<AccidentInsurance> AccidentInsurances { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 
 }

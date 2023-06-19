@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TrustGuard.Domain
-build_property.ProjectDir = C:\Users\Asus\Desktop\TrustGuard\TrustGuard-Insurance-Company-\TrustGuard\TrustGuard.Domain\
+build_property.ProjectDir = /Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/
