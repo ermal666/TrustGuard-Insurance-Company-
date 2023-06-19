@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {}
+    "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Persistence/TrustGuard.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
+    "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/TrustGuard.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
+        "projectUniqueName": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/TrustGuard.Domain.csproj",
         "projectName": "TrustGuard.Domain",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\obj\\",
+        "projectPath": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/TrustGuard.Domain.csproj",
+        "packagesPath": "/Users/ermal/.nuget/packages/",
+        "outputPath": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ermal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,6 +58,12 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -73,6 +77,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[108.0.1, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.20.0, )"
             }
           },
           "imports": [
@@ -86,41 +94,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj": {
+    "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Persistence/TrustGuard.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
+        "projectUniqueName": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Persistence/TrustGuard.Persistence.csproj",
         "projectName": "TrustGuard.Persistence",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\TrustGuard.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Persistence\\obj\\",
+        "projectPath": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Persistence/TrustGuard.Persistence.csproj",
+        "packagesPath": "/Users/ermal/.nuget/packages/",
+        "outputPath": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ermal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj": {
-                "projectPath": "C:\\Users\\Asus\\Desktop\\TrustGuard\\TrustGuard-Insurance-Company-\\TrustGuard\\TrustGuard.Domain\\TrustGuard.Domain.csproj"
+              "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/TrustGuard.Domain.csproj": {
+                "projectPath": "/Users/ermal/Downloads/TrustGuard 2/TrustGuard.Domain/TrustGuard.Domain.csproj"
               }
             }
           }
@@ -150,6 +166,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.20.0, )"
             }
           },
           "imports": [
@@ -163,12 +183,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }

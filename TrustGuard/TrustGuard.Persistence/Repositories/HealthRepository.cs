@@ -24,7 +24,7 @@ public class HealthRepository : IHealthRepository
     }
     public Offer GetOfferById(int offerId)
     {
-        return _context.Offers.FirstOrDefault(o => o.OfferId == offerId);
+        return _context.Offers.FirstOrDefault(o => o.Id == offerId);
     }
 
     public void Save(HealthInsurance healthInsurance)
