@@ -10,7 +10,7 @@ namespace TrustGuard.Service.IServices
     public interface IUserService
     {
         Task<List<User>> GetUsersPaged(int pageIndex, int pageSize);
-        Task<User> GetUser(int id);
+        Task<User> GetUser(string id);
         Task<bool> CreateUser(User user);
         Task DeleteUser(int id);
 

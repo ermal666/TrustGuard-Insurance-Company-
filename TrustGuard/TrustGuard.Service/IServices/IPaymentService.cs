@@ -6,9 +6,10 @@ namespace TrustGuard.Service.IServices
     public interface IPaymentService
     {
         Task<PaymentIntent> ConfirmPaymentIntent(string paymentIntentId);
-        Task<PaymentIntent> CreatePaymentIntent(decimal price, string currency, int insuranceType);
+        Task<PaymentIntent> CreatePaymentIntent(Offer offer, string currency = "eur");
         Task<Subscription> CreateSubscription(Offer offer);
         Task<PaymentIntent> GetPaymentIntent(string paymentIntentId);
+        Task<Payment> Callback(Event @event);
 
     }
 }
