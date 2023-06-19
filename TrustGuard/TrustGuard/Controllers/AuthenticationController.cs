@@ -21,7 +21,7 @@ namespace TrustGuard.Application.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class AuthenticationController : ControllerBase
+public class AuthenticationController : Controller
 {
     private readonly UserManager<User> _userManager;
     //private readonly JwtConfig _jwtConfig;
@@ -82,6 +82,7 @@ public class AuthenticationController : ControllerBase
 
             if (isCreated.Succeeded)
             {
+                
                 var code = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
                 
                 var emailBody = "Please Confirm your Email address! <a href=\"#URL#\"> Click Here </a>";

@@ -6,7 +6,7 @@ namespace TrustGuard.Application.Controllers;
 
 [Route("api/[controller]/[action]")]
 [ApiController]
-public class TPLController : ControllerBase
+public class TPLController : Controller
 {
     private readonly ITPLRepository _tplRepository;
 

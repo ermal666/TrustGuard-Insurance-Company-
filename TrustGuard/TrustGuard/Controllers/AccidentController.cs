@@ -6,7 +6,7 @@ namespace TrustGuard.Application.Controllers;
 
 [Route("api/[controller]/[action]")]
 [ApiController]
-public class AccidentController : ControllerBase
+public class AccidentController : Controller
 {
     private readonly IAccidentRepository _accidentRepository;
     

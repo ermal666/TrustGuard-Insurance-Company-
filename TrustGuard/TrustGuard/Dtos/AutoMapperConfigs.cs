@@ -7,6 +7,7 @@ namespace TrustGuard.Application.Dtos
     {
         public AutoMapperConfigs()
         {
+            CreateMap<CascoInsurance, CreateCascoDto>().ReverseMap();
             CreateMap<User, CreateUserDto>().ReverseMap();
         }
     }

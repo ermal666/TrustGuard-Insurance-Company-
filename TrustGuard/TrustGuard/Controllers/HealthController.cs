@@ -9,7 +9,7 @@ namespace TrustGuard.Application.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class HealthController : ControllerBase
+public class HealthController : Controller
 {
     private readonly IHealthRepository _healthRepository;
 

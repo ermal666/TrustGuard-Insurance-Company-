@@ -1,4 +1,5 @@
 using System.Text;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -20,17 +21,21 @@ var services = builder.Services;
 services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
+services.AddHttpContextAccessor();
 
-// services.AddDbContext<AppDbContext>(options =>
-//     options.UseSqlServer(builder.Configuration.GetConnectionString("DeafaultConnection")));
-services.AddDbContext<AppDbContext>();
+services.AddAutoMapper(typeof(Program));
 
-// adding Stripe configuration
-builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+services.AddDbContext<AppDbContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+//services.AddDbContext<AppDbContext>();
 
-// adding jwt configuration
-builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
-
+// adding Stripe configuration                                                             
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));    
+                                                                                           
+// adding jwt configuration                                                                
+builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));      
+                                                                                           
 var key = Encoding.ASCII.GetBytes(builder.Configuration.GetSection("JwtConfig:Secret").Value);
 
 var tokenValidationParameters = new TokenValidationParameters()
@@ -57,16 +62,27 @@ builder.Services.AddAuthentication(options =>
     });
 builder.Services.AddSingleton(tokenValidationParameters);
 
-builder.Services.AddIdentity<User, IdentityRole>(options => options.SignIn.RequireConfirmedEmail = false)
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedEmail = false)
     .AddEntityFrameworkStores<AppDbContext>();
 
 // dependency injection
 services.AddScoped<IUserRepository, UserRepository>();
-services.AddScoped<IUserService, UserService>();
 services.AddScoped<ICascoRepository, CascoRepository>();
 services.AddScoped<ITPLRepository, TPLRepository>();
 services.AddScoped<IHealthRepository, HealthRepository>();
 services.AddScoped<IAccidentRepository, AccidentRepository>();
+services.AddScoped<IPropertyRepositroty, PropertyRepositroty>();
+services.AddScoped<IPaymentRepository, PaymentRepository>();
+services.AddScoped<IInsuranceRepository, InsuranceRepository>();
+services.AddScoped<ICarRepository, CarRepository>();
+services.AddScoped<IInsuranceService, InsuranceService>();
+services.AddScoped<IOfferRepository, OfferRepository>();
+
+services.AddScoped<IPaymentService, PaymentService>();
+services.AddScoped<IUserService, UserService>();
+
+
+
 
 var app = builder.Build();
 
